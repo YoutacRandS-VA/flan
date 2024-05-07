@@ -1,0 +1,17 @@
+modules = ["python-3.10:v18-20230807-322e88b"]
+run = "make start"
+compile = "make build"
+
+[nix]
+channel = "stable-23_05"
+
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[deployment]
+run = ["sh", "-c", "make start"]
+deploymentTarget = "cloudrun"
+build = ["sh", "-c", "make build"]
