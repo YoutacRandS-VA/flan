@@ -5,3 +5,8 @@ Jinja2==2.11.3
 markupsafe==2.0.1
 requests
 xds-protos
+discord.py==2.3.2
+Flask==3.0.3
+replit==3.6.3
+matplotlib==3.8.4
+pandas==2.2.2
